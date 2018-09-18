@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>情书</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+<audio preload="auto" autoplay="autoplay" preload="auto" controls="controls" style="display: none;">
+	<source src="789.mp3" />
+</audio>
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="comments">/**</span><br />
+			<span class="space"/><span class="comments">*2018—08-12</span><br />
+			<span class="space"/><span class="comments">*/</span><br />
+			<span class="keyword">Object hu</span>  = new Object();<br />
+			<span class="keyword">Object yang</span>  = new Object();<br />
+			<span class="keyword">String startDate</span>  = "2005年05月06日";<br />
+			<span class="keyword">String contactDate</span>  = "2005年05月13日";<br />
+			while(new Date() == startDate){<br />
+				<span style="margin-left: 30px;"></span>People.meet(hu, yang);<br />
+				<span style="margin-left: 30px;"></span>hu.lookAndLike(yang);<br />
+			}<br /><br />
+			
+			while(new Date() == contactDate){<br />
+				<span style="margin-left: 30px;"></span>hu.getWinxin(yang);<br />
+				<span style="margin-left: 30px;"></span>hu.happyface();<br />
+			}<br /><br />
+			
+			People.game(hu, yang);<br />
+			People.eat(hu, yang);<br />
+			People.laugh(hu, yang);<br />
+			People.seeSea(hu, yang);<br /><br />
+			
+			if(hu.showStupid() && yang.Unhappy){<br />
+				<span style="margin-left: 30px;"></span>hu.cook();<br />
+				<span style="margin-left: 30px;"></span>hu.getCake();<br />
+				<span style="margin-left: 30px;"></span>yang.notAngry();<br />
+			}<br /><br />
+			
+			if (1000 == hu.luck){
+				<span style="margin-left: 30px;"></span>hu.giveLuckToPeople(yang, 998);<br />
+				<span style="margin-left: 30px;"></span>hu.luck--<br />
+				<span style="margin-left: 30px;"></span>hu.meet(yang);<br />
+				<span style="margin-left: 30px;"></span>hu.luck--<br />
+				<span style="margin-left: 30px;"></span>hu.walkWith(yang)<br />
+			}<br /><br />
+			
+			Long day;<br />
+			for(day = 0;TheRestOfMyLife; day++){<br />
+				<span style="margin-left: 30px;"></span>hu.love++;<br />
+				<span style="margin-left: 30px;"></span>printf(Love you a little more every day); <br />
+			}<br /><br />
+			
+			if(yang.hand == cold && weather == winter){<br />
+				<span style="margin-left: 30px;"></span> giveMyLove(hu.hand.temperature,yang.hand.temperature);<br />
+				 <span style="margin-left: 30px;"></span>return yang.happyface; <br />
+			}<br /><br />
+			try{<br />
+				<span style="margin-left: 30px;"></span>living();<br />
+			}catch(Exception e){<br />
+				<span style="margin-left: 30px;"></span>faceTogether();<br />
+			}finally{<br />
+				<span style="margin-left: 30px;"></span>ours.love++;<br />
+			}<br />
+			<br />
+			<br>
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words" style="display: none;">
+				<img width="100%" src="158.jpg"/>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2013, 2, 28);
+together.setHours(20);
+together.setMinutes(0);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+	
+	setTimeout(function () {
+		document.getElementById("words").style.display = ""
+	}, 11000);
+
+	//timeElapse(together);
+	setInterval(function () {
+		//timeElapse(together);
+	}, 500);
+
+	//adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>儿童节快乐</title>
+		<meta name="keywords" content="canvas动画, 手机微信网站特效, css3动画, html5特效, 网页特效" />
+		<meta name="description" content="网页特效库-专注于HTML5、CSS3、js、jQuery、手机移动端等网页特效的手机与分享。所有的资源都免费提供广大童鞋下载学习和使用。" />
+
+		<link rel="stylesheet" href="css/style_yun.css">
+		<link rel="stylesheet" href="css/style61.css" media="screen" type="text/css" />
+
+	</head>
+
+	<style>
+		.stage {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+		}
+		
+		.sheep {
+			width: 154px;
+			height: 117px;
+			background-image: url('sheep.png');
+			background-position: 0 0;
+			position: absolute;
+			right: 0;
+			bottom: 50px;
+			background-repeat: no-repeat;
+			cursor: -webkit-grabbing;
+		}
+	</style>
+
+	<body>
+		<div class="main_window">
+			<div class="cloud" data-type="white_4" style="top: 238px;" data-speed="1"></div>
+			<div class="cloud" data-type="white_2" style="top: 252px;" data-speed="2"></div>
+			<div class="cloud" data-type="white_1" style="top: 481px;" data-speed="3"></div>
+			<div class="cloud" data-type="white_1" style="top: 285px;" data-speed="4"></div>
+			<div class="cloud" data-type="white_5" style="top: 391px;" data-speed="5"></div>
+			<div class="cloud" data-type="white_4" style="top: 410px;" data-speed="6"></div>
+			<div class="cloud" data-type="white_6" style="top: 494px;" data-speed="7"></div>
+			<div class="cloud" data-type="white_6" style="top: 197px;" data-speed="8"></div>
+			<div class="cloud" data-type="white_1" style="top: 254px;" data-speed="9"></div>
+			<div class="cloud" data-type="white_2" style="top: 108px;" data-speed="10"></div>
+			<div class="cloud" data-type="white_5" style="top: 133px;" data-speed="11"></div>
+			<div class="cloud" data-type="white_5" style="top: 126px;" data-speed="12"></div>
+			<div class="cloud" data-type="white_5" style="top: 291px;" data-speed="13"></div>
+			<div class="cloud" data-type="white_5" style="top: 515px;" data-speed="14"></div>
+			<div class="cloud" data-type="white_6" style="top: 410px;" data-speed="15"></div>
+			<div class="cloud" data-type="white_1" style="top: 198px;" data-speed="16"></div>
+			<div class="cloud" data-type="white_2" style="top: 130px;" data-speed="17"></div>
+			<div class="cloud" data-type="white_6" style="top: 274px;" data-speed="18"></div>
+			<div class="cloud" data-type="white_6" style="top: 129px;" data-speed="19"></div>
+			<div class="cloud" data-type="white_2" style="top: 140px;" data-speed="20"></div>
+			<div class="cloud" data-type="white_6" style="top: 312px;" data-speed="21"></div>
+			<div class="cloud" data-type="white_6" style="top: 258px;" data-speed="22"></div>
+			<div class="cloud" data-type="white_2" style="top: 133px;" data-speed="23"></div>
+			<div class="cloud" data-type="white_1" style="top: 530px;" data-speed="24"></div>
+			<div class="cloud" data-type="white_5" style="top: 541px;" data-speed="25"></div>
+			<div class="cloud" data-type="white_1" style="top: 313px;" data-speed="26"></div>
+			<div class="cloud" data-type="white_1" style="top: 552px;" data-speed="27"></div>
+			<div class="cloud" data-type="white_1" style="top: 548px;" data-speed="28"></div>
+			<div class="cloud" data-type="white_2" style="top: 438px;" data-speed="29"></div>
+			<div class="cloud" data-type="white_2" style="top: 516px;" data-speed="30"></div>
+			<div class="cloud" data-type="white_5" style="top: 556px;" data-speed="31"></div>
+			<div class="cloud" data-type="white_5" style="top: 225px;" data-speed="32"></div>
+			<div class="cloud" data-type="white_3" style="top: 286px;" data-speed="33"></div>
+			<div class="cloud" data-type="white_2" style="top: 416px;" data-speed="34"></div>
+			<div class="cloud" data-type="white_2" style="top: 105px;" data-speed="35"></div>
+			<div class="cloud" data-type="white_6" style="top: 195px;" data-speed="36"></div>
+			<div class="cloud" data-type="white_2" style="top: 281px;" data-speed="37"></div>
+			<div class="cloud" data-type="white_1" style="top: 291px;" data-speed="38"></div>
+			<div class="cloud" data-type="white_4" style="top: 196px;" data-speed="39"></div>
+			<div class="cloud" data-type="white_6" style="top: 442px;" data-speed="40"></div>
+
+		</div>
+		<div class="wrapper">
+			<div class="border-circle" id="one"></div>
+			<div class="border-circle" id="two"></div>
+			<div class="background-circle" style="width: 510px;height: 510px;">
+				<div class="body"></div>
+				<span class="shirt-text">杨</span>
+				<span class="shirt-text">晓</span>
+				<span class="shirt-text">慧</span><br>
+				<span class="shirt-text">儿</span>
+				<span class="shirt-text">童</span>
+				<span class="shirt-text">节</span><br>
+				<span class="shirt-text">快</span>
+				<span class="shirt-text">乐</span>
+			</div>
+			<div class="head">
+				<img src="css/123.png" style="width: 202px;" />
+			</div>
+			<video id="rrr" src="css/456.mp3" loop="loop" autoplay="autoplay" style="position:  absolute; display: none; margin-top: 500px;"></video>
+			<span class="music-note" id="one">&#9835;</span>
+			<span class="music-note" id="two">&#9834;</span>
+		</div>
+		<div class="stage" id="stage">
+		</div>
+
+	</body>
+
+	<script>
+		
+		var stage = document.getElementById("stage");
+		stage.style.width = document.body.clientWidth + "px";
+		var SHEEP_WIDTH = 164,
+			TRAN_SPEED = 10,
+			SPRIPT_SPEED = 70;
+		var screenWidth = window.innerWidth;
+		window.onresize = function() {
+			screenWidth = window.innerWidth;
+		}
+		createSheep();
+		var create = setInterval(createSheep, 1500);
+		//创建小羊
+		function createSheep() {
+			//限制最多9只小羊
+			sheeps = stage.childNodes;
+			if(sheeps.length > 8) {
+				return false;
+			}
+			var sheep = new Sheep();
+			setMove(sheep);
+		}
+		//初始化小羊
+		function Sheep() {
+			this.tran_y = 0;
+			this.sprit_left = 0;
+			this.spriptSpeed = SPRIPT_SPEED + 20 * Math.random();
+			this.tranSpeed = TRAN_SPEED + TRAN_SPEED * Math.random();
+			this.tran_x = SHEEP_WIDTH + 400 * Math.random();
+			this.sheepDom = document.createElement("div");
+			this.sheepDom.className = "sheep";
+			this.sheepDom.style.transform = 'translate3d(' + SHEEP_WIDTH + 'px, 0, 0)';
+			stage.appendChild(this.sheepDom);
+			this.spritTop = 0;
+			this.catch = false;
+			this.x = 0;
+			this.y = 0;
+		}
+		//移动的小羊
+		function setMove(sheep) {
+			var sprit = setInterval(spritMove, sheep.spriptSpeed);
+			var walkl = setInterval(walkMove, sheep.spriptSpeed);
+			//改变背景图片位置
+			function spritMove() {
+				if(sheep.sprit_left < (SHEEP_WIDTH * 7)) {
+					sheep.sprit_left = sheep.sprit_left + SHEEP_WIDTH;
+				} else {
+					sheep.sprit_left = 0;
+				}
+				sheep.sheepDom.style.backgroundPosition = -sheep.sprit_left + 'px ' + sheep.spritTop + 'px';
+			}
+			//小羊移动
+			function walkMove() {
+				sheep.sheepDom.style.transform = 'translate3d(' + sheep.tran_x + 'px, ' + sheep.tran_y + 'px, 0)';
+				if(sheep.tran_x > -(screenWidth + SHEEP_WIDTH + 100)) {
+					sheep.tran_x = sheep.tran_x - sheep.tranSpeed;
+				} else {
+					clearInterval(walkl);
+					clearInterval(sprit);
+					stage.removeChild(sheep.sheepDom);
+					sheep = null;
+				}
+			}
+			//鼠标按下
+			sheep.sheepDom.addEventListener('mousedown', function(ev) {
+				sheep.spritTop = -128;
+				sheep.tranSpeed = 0;
+				sheep.catch = true;
+				var oEvent = event || ev;
+				sheep.x = oEvent.pageX;
+				sheep.y = oEvent.pageY;
+			}, false);
+			//鼠标移开
+			sheep.sheepDom.addEventListener('mouseup', function() {
+				if(sheep.catch) {
+					sheep.spritTop = 0;
+					sheep.tranSpeed = TRAN_SPEED + TRAN_SPEED * Math.random();
+					sheep.catch = false;
+					sheep.tran_y = 0;
+				}
+			}, false);
+			//鼠标离开
+			sheep.sheepDom.addEventListener('mouseout', function(ev) {
+				if(sheep.catch) {
+					sheep.spritTop = 0;
+					sheep.tranSpeed = TRAN_SPEED + TRAN_SPEED * Math.random();
+					sheep.catch = false;
+					sheep.tran_y = 0;
+				}
+
+			}, false);
+			//鼠标移动，鼠标移动是有问题的，不应该存在鼠标从小羊身上移开的情况，因为此时小羊应该随着鼠标移动
+			sheep.sheepDom.addEventListener('mousemove', function(ev) {
+				if(sheep.catch) {
+					var oEvent = event || ev;
+					sheep.tran_x = sheep.tran_x - (sheep.x - oEvent.pageX);
+					sheep.tran_y = sheep.tran_y - (sheep.y - oEvent.pageY);
+					sheep.sheepDom.style.transform = 'translate3d(' + sheep.tran_x + 'px, ' + sheep.tran_y + 'px, 0)';
+					sheep.x = oEvent.pageX;
+					sheep.y = oEvent.pageY;
+				}
+			}, false);
+		}
+		
+		document.getElementById("rrr").play();
+	</script>
+
+</html>

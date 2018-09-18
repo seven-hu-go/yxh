@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>the second month</title>
+	</head>
+	<audio id="audio" src="23.mp3" autoplay="autoplay" controls="controls" preload="auto" style="display: none;">
+	</audio>
+
+	<body id="robot">
+		<iframe id="month" width="100%" height="1000px" src="fly.html"></iframe>
+	</body>
+	<script>
+		var audio = document.getElementById('audio');
+		audio.play();
+		setTimeout(function() {
+			document.getElementById("month").src = "loading.html"
+		}, 20000);
+
+		setTimeout(function() {
+			document.getElementById("month").src = "flower.html"
+		}, 60000);
+	</script>
+
+</html>

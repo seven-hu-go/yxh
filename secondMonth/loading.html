@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="UTF-8">
+
+		<title>the second month</title>
+
+		<link rel="stylesheet" href="css/style_loading.css" media="screen" type="text/css" />
+
+	</head>
+
+	<body>
+		<div id="text" style="text-align: center;margin-top: 100px;color: aliceblue;font-size: 21px;"></div>
+
+		<div id="robot">
+			<div class="piston">
+				<div class="rotator"></div>
+				<div class="block">
+					回
+					<div class="arm"></div>
+				</div>
+			</div>
+			<div class="piston">
+				<div class="rotator"></div>
+				<div class="block">
+					来
+					<div class="arm"></div>
+				</div>
+			</div>
+			<div class="piston">
+				<div class="rotator"></div>
+				<div class="block">
+					吧
+					<div class="arm"></div>
+				</div>
+			</div>
+			<div class="piston">
+				<div class="rotator"></div>
+				<div class="block">
+					我
+					<div class="arm"></div>
+				</div>
+			</div>
+			<div class="piston">
+				<div class="rotator"></div>
+				<div class="block">
+					开
+					<div class="arm"></div>
+				</div>
+			</div>
+			<div class="piston">
+				<div class="rotator"></div>
+				<div class="block">
+					拖
+					<div class="arm"></div>
+				</div>
+			</div>
+			<div class="piston">
+				<div class="rotator"></div>
+				<div class="block">
+					拉
+					<div class="arm"></div>
+				</div>
+			</div>
+			<div class="piston">
+				<div class="rotator"></div>
+				<div class="block">
+					机
+					<div class="arm"></div>
+				</div>
+			</div>
+			<div class="piston">
+				<div class="rotator"></div>
+				<div class="block">
+					接
+					<div class="arm"></div>
+				</div>
+			</div>
+			<div class="piston">
+				<div class="rotator"></div>
+				<div class="block">
+					你
+					<div class="arm"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+	
+	<script>
+		var index = 0;
+		var word = "其实我平时工作挺单调的，有时候也会感到压力，同事也说有时候我好像在崩溃的边缘试探（闹玩），但是看到你说话就心情立马转好，瞬间满电，比OPPO充电还快。"
+							+ "我愿把我整个世界都分享给你，连同它的怪癖，谜之歌唱，忽然“犯病”，一百零八种坏毛病。它们好像都很真惹人讨厌，只有一点好，爱你。";
+
+		function type() {
+			document.getElementById("text").innerText = word.substring(0, index++);
+		}
+		setInterval(type, 200);
+	</script>
+
+</html>
